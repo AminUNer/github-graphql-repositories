@@ -14,10 +14,10 @@ export function createApollo(httpLink: HttpLink) {
     }
   }));
 
-  const auth = setContext((operation, context) => {
+  const auth = setContext(() => {
     return {
       headers: {
-        Authorization: `bearer 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`
+        Authorization: `bearer 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`
       }
     };
   });
