@@ -1,4 +1,13 @@
-# GithubGraphqlRepositories
+# ## GithubGraphqlRepositories
+
+#### A project that allow you to show the list of public github repositories and their contributors.
+
+#### This project use external libraries such as: @angular/material, apollo-angular and ngx-infinite-scroll.
+
+#### Angular typescript project which includes a structured project architecture wired with redux.
+
+#### The project includes a material custom theme (with dark color switch) and a persistence for the redux store to the localStorage.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 

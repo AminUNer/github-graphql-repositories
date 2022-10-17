@@ -1,0 +1,23 @@
+<mat-card class="repository-card">
+  <mat-card-header>
+    <mat-card-title>
+      <div fxLayout="row" fxLayoutAlign="center center">
+        <img class="avatar-image" mat-card-avatar [src]=repository.owner?.avatarUrl alt="avatar">
+        <div> <a class="profile-url" [href]="repository.owner?.url">{{ repository.owner?.login }}</a> / <a class="repository-url profile-url" [href]="repository.url">{{ repository.name }}</a></div>
+      </div>
+    </mat-card-title>
+    <mat-card-subtitle>
+      <div fxLayout="column wrap" fxLayoutAlign="center start">
+        Created on {{ repository.createdAt | date }} <br> Last updated on {{ repository.updatedAt | date }}
+      </div>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{ repository.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-flat-button (click)="openDialog()">SEE CONTRIBUTORS</button>
+  </mat-card-actions>
+</mat-card>

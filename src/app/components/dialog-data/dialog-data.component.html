@@ -1,0 +1,9 @@
+<div class="dialog-container">
+  <h1 mat-dialog-title>Contributors</h1>
+  <div mat-dialog-content>
+    <div class="contributor" fxLayout="row" fxLayoutAlign="start center" *ngFor="let contributor of data.contributors">
+      <img mat-card-avatar [src]=contributor.avatarUrl alt="avatar">
+      <div> <a class="profile" [href]="contributor.url">{{ contributor.login }}</a> ({{ contributor.name }})</div>
+    </div>
+  </div>
+</div>

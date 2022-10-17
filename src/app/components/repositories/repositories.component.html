@@ -1,0 +1,19 @@
+<div class="content"
+     infinite-scroll
+     [infiniteScrollDistance]="2"
+     (scrolled)="fetchRepositories()"
+>
+  <div fxLayout="row wrap" class="cards-container" *ngFor="let key of objectKeys(repositories)">
+    <div fxFlex="50"  fxFlex.lg="33" fxFlex.sm="100"  fxLayoutAlign="center" *ngFor="let repository of repositories[key]">
+      <app-repository [repository]=repository></app-repository>
+    </div>
+  </div>
+</div>
+<div *ngIf="error">
+  Error :-(
+</div>
+<div fxLayout="row" class="loading-spinner-container" fxLayoutAlign="center center">
+  <div *ngIf="loading && this.objectKeys(repositories).length === 0">
+    <mat-spinner></mat-spinner>
+  </div>
+</div>
