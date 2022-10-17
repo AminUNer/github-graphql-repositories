@@ -60,7 +60,6 @@ export class RepositoriesEffects {
         return new GetRepositoriesSuccess({repositories, endCursor: result.data?.search?.pageInfo?.endCursor });
       }),
       catchError((err) => {
-        console.log(err.message);
         return [new GetRepositoriesError(err)]
       })
     );

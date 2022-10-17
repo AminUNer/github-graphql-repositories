@@ -48,7 +48,6 @@ export class RepositoriesComponent implements OnInit {
       if (error) {
         this.openSnackBar(error, "Close");
       }
-      console.log(error);
     });
 
   }
