@@ -8,6 +8,7 @@
 
 #### The project includes a material custom theme (with dark color switch) and a persistence for the redux store to the localStorage.
 
+#### [Demo](https://github-graphql-repositories.vercel.app/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
