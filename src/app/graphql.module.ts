@@ -17,7 +17,7 @@ export function createApollo(httpLink: HttpLink) {
   const auth = setContext((operation, context) => {
     return {
       headers: {
-        Authorization: `bearer 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`
+        Authorization: `bearer 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`
       }
     };
   });
